@@ -114,7 +114,7 @@ export default class CarritoDeComprasHTML extends Global{
         
         cargarInformacion(carritoDeCompras){
             this.setProductos(carritoDeCompras.getProductos());
-            this.getCantidadDeProductos().innerHTML = (carritoDeCompras.getTotal() != 0)? `Productos en el Carrito: <span class='cantidadDeProductos'>${carritoDeCompras.getCantidadDeProductos()}</span>` : 'fgg';
+            this.getCantidadDeProductos().innerHTML = (carritoDeCompras.getTotal() != 0)? `Productos en el Carrito: <span class='cantidadDeProductos'>${carritoDeCompras.getCantidadDeProductos()}</span>` : 'error en la línea 117 del archivo CarritoDeCompras.html';
         }
         
         crearProductoHTML(){
