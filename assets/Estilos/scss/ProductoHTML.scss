@@ -1,0 +1,101 @@
+
+.ProductoHTML{
+    background-color: aliceblue;
+    border-color: gray;
+    border-radius: 0.7em;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: grid;
+    padding: 0.3em;
+    position: relative;
+    opacity: 0.85;
+    text-align: center;
+    &:hover{
+        box-shadow:  0 0 0 5px #D568A8;
+        opacity: 1;
+        outline-offset: -0.3px;
+        outline-color: black;
+        outline-style: solid;
+        outline-width: 1px;
+        
+    }
+    &:hover .botonAgregar{
+        background-color: #fd384f;
+        color: white; 
+    }
+    
+    img{
+        border-top-left-radius: 0.7em;
+        border-top-right-radius: 0.7em;
+        height: 11em;
+        width:100%;
+        @media(max-width: 480px){
+            max-height: 10em;
+        }
+    }
+    :is(button){
+        border-radius: 6px;
+        color: white;
+        cursor: grab;
+        font-size: 1em;
+        font-weight: bolder;
+        padding: 8px 16px;
+        text-align: center;
+    }
+    :is(h2,h3){
+        margin: 0.4em;
+        @media(max-width: 480px){
+            margin: 0.3em;
+        }
+    }
+    .tamaño{
+        font-weight: normal;
+    }
+    .variedad{
+        font-weight: normal;
+    }
+    .precio{
+        color: #3a4570;
+        font-family: impact;
+        font-size: 1.9em;  
+        letter-spacing: 2.2px;
+    }
+    .botonAgregar{
+        background-color: #0a8920;
+        color:  #285148;
+        &:after{
+            content: "AGREGAR";
+        }
+    }
+    .botonEliminar{
+        background-color: red;
+        border-top-right-radius: 0.7em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:hover:after{
+            content: "x";            
+        }
+        &:after{
+            content: "X";
+        }
+    }
+    .cantidadAComprar{
+        align-items: center;
+        background-color: #ffac77;
+        border-radius: 50%;
+        color: yellow;
+        display: none;
+        font-size: 1.2em;
+        font-weight: bolder;
+        height: 1.9em;
+        justify-content: center;
+        justify-items: center;
+        left: 85%;
+        padding: 0.3em;
+        position: absolute;
+        width: 1.9em;
+        top: 45%;    
+    }
+}

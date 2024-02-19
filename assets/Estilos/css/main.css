@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.CarritoDeComprasHTML {
+  align-items: center;
+  background-color: white;
+  border-bottom-left-radius: 7px;
+  color: black;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 2em 1fr;
+  justify-items: center;
+  padding: 0.4em;
+  position: fixed;
+  right: 0;
+  top: -0.2em;
+  z-index: 2; }
+  .CarritoDeComprasHTML .carritoDeCompras {
+    height: 2em;
+    width: 2em; }
+  .CarritoDeComprasHTML .cantidadDeProductos {
+    font-size: 1.4em; }
+  .CarritoDeComprasHTML .mensajeDeInformacion {
+    background-color: #488dff;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+    padding: 0.25em;
+    position: fixed;
+    right: 3.5em; }
+  .CarritoDeComprasHTML .total {
+    font-family: impact;
+    font-size: 2.8em;
+    bottom: 0;
+    position: fixed; }
+  .CarritoDeComprasHTML:hover {
+    cursor: grab; }
+
+.Paginador {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 16em));
+  margin-top: 3.5em;
+  padding: 2em;
+  overflow: hidden; }
+
+.ProductoHTML {
+  background-color: aliceblue;
+  border-color: gray;
+  border-radius: 0.7em;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: grid;
+  padding: 0.3em;
+  position: relative;
+  opacity: 0.85;
+  text-align: center; }
+  .ProductoHTML:hover {
+    box-shadow: 0 0 0 5px #D568A8;
+    opacity: 1;
+    outline-offset: -0.3px;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 1px; }
+  .ProductoHTML:hover .botonAgregar {
+    background-color: #fd384f;
+    color: white; }
+  .ProductoHTML img {
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
+    height: 11em;
+    width: 100%; }
+    @media (max-width: 480px) {
+      .ProductoHTML img {
+        max-height: 10em; } }
+  .ProductoHTML :is(button) {
+    border-radius: 6px;
+    color: white;
+    cursor: grab;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 8px 16px;
+    text-align: center; }
+  .ProductoHTML :is(h2,h3) {
+    margin: 0.4em; }
+    @media (max-width: 480px) {
+      .ProductoHTML :is(h2,h3) {
+        margin: 0.3em; } }
+  .ProductoHTML .tamaño {
+    font-weight: normal; }
+  .ProductoHTML .variedad {
+    font-weight: normal; }
+  .ProductoHTML .precio {
+    color: #3a4570;
+    font-family: impact;
+    font-size: 1.9em;
+    letter-spacing: 2.2px; }
+  .ProductoHTML .botonAgregar {
+    background-color: #0a8920;
+    color: #285148; }
+    .ProductoHTML .botonAgregar:after {
+      content: "AGREGAR"; }
+  .ProductoHTML .botonEliminar {
+    background-color: red;
+    border-top-right-radius: 0.7em;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .ProductoHTML .botonEliminar:hover:after {
+      content: "x"; }
+    .ProductoHTML .botonEliminar:after {
+      content: "X"; }
+  .ProductoHTML .cantidadAComprar {
+    align-items: center;
+    background-color: #ffac77;
+    border-radius: 50%;
+    color: yellow;
+    display: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    height: 1.9em;
+    justify-content: center;
+    justify-items: center;
+    left: 85%;
+    padding: 0.3em;
+    position: absolute;
+    width: 1.9em;
+    top: 45%; }
+
+body {
+  background-color: #9ea4fb; }
+
+.botonVolver {
+  background-color: #1e703d;
+  color: white;
+  cursor: grab;
+  font-size: 1em;
+  padding: 0.3em;
+  position: fixed;
+  top: 0.5em;
+  left: 1.5em; }
+
+/*# sourceMappingURL=main.css.map */

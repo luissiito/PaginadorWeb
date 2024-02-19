@@ -1,0 +1,36 @@
+.CarritoDeComprasHTML {
+  align-items: center;
+  background-color: white;
+  border-bottom-left-radius: 7px;
+  color: black;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 2em 1fr;
+  justify-items: center;
+  padding: 0.4em;
+  position: fixed;
+  right: 0;
+  top: -0.2em;
+  z-index: 2; }
+  .CarritoDeComprasHTML .carritoDeCompras {
+    height: 2em;
+    width: 2em; }
+  .CarritoDeComprasHTML .cantidadDeProductos {
+    font-size: 1.4em; }
+  .CarritoDeComprasHTML .mensajeDeInformacion {
+    background-color: #488dff;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+    padding: 0.25em;
+    position: fixed;
+    right: 3.5em; }
+  .CarritoDeComprasHTML .total {
+    font-family: impact;
+    font-size: 2.8em;
+    bottom: 0;
+    position: fixed; }
+  .CarritoDeComprasHTML:hover {
+    cursor: grab; }
+
+/*# sourceMappingURL=CarritoDeComprasHTML.css.map */
