@@ -1,18 +1,21 @@
 
 .CarritoDeComprasHTML{
     align-items: center;
-    background-color: white;
+    background-color: rgba(0,0,0,0.005);
     border-bottom-left-radius: 7px;
     color: black;
     display: grid;
     grid-gap: 0.5em;
     grid-template-columns: 2em 1fr;
-    justify-items: center;
+    justify-items: center;    
     padding: 0.4em;
     position: fixed;
     right: 0;
     top: -0.2em;
     z-index: 2;
+    h3{
+        margin: .2em;
+    }
     .carritoDeCompras{
         height: 2em;
         width: 2em;
@@ -37,5 +40,11 @@
     }
     &:hover{
         cursor: grab;
+        border-left-color: white;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
 }
